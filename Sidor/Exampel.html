@@ -19,18 +19,28 @@
       <a href="../Sidor/Exampel.html">Exampel</a>
     </nav>
 
+    <!--information om sidan-->
+
     <p class="andra">
       I den här sidan så kommer att hitta ett exampel på en av det viktigaste
       saker man kommer att gå genom unde året och det är om kondition och
       simning
     </p>
 
-    <img src="../Bilder/lungs.png" />
+    <!--bilden av lungorna-->
+
+    <img id="lungs" src="../Bilder/Lungs.png" />
+
+    <!--knappar för att kunna gör lungorna större eller mindre-->
 
     <div class="buttons">
-      <button onclick="inhale()">Inhale</button>
-      <button onclick="exhale()">Exhale</button>
+      <button id="button1" onclick="inhale()">Inhale</button>
+      <button id="button2" onclick="exhale()">Exhale</button>
     </div>
+
+    <!--JavaScripten som finnns i en annnan fil och den körs här-->
+
+    <script src="../Css och JavaScript/JavaScript.js"></script>
 
     <footer>Skapad av Riad</footer>
   </body>
