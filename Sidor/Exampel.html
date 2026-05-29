@@ -27,21 +27,38 @@
       simning
     </p>
 
-    <!--bilden av lungorna-->
+    <!--ett div med dens engen styling som jag använde för att göra så att lungorna och knappar är till vänster medans skickameddelande är till höger och det är så att den inte finns för mycket tom plats-->
 
-    <img id="lungs" src="../Bilder/Lungs.png" />
+    <div class="lunga-kontakt">
+      <div style="position: relative; display: inline-block">
+        <!--bilden av lungorna-->
+        <img id="lungs" src="../Bilder/Lungs.png" />
 
-    <!--knappar för att kunna gör lungorna större eller mindre-->
-
-    <div class="buttons">
-      <button id="button1" onclick="inhale()">Inhale</button>
-      <button id="button2" onclick="exhale()">Exhale</button>
+        <!--knappar för att kunna gör lungorna större eller mindre-->
+        <div class="buttons">
+          <button id="button1" onclick="inhale()">Inhale</button>
+          <button id="button2" onclick="exhale()">Exhale</button>
+        </div>
+      </div>
+      <!--JavaScripten som finnns i en annnan fil och den körs här-->
+      <script src="../Css och JavaScript/JavaScript.js"></script>
+      <div class="SkickaMeddelande2">
+        <!--fråga så att man vet vad man ska göra-->
+        <h2>Vad skulle jag kunna fixa i mitt hemsida?</h2>
+        <!--form för att man ska kunna skicka meddelande. Text rutan som man skriver in i och dens knapp för att skicka det-->
+        <form id="SkickaMeddelande">
+          <textarea
+            id="Meddelande"
+            placeholder="Skriv ditt meddelande"
+          ></textarea>
+          <button type="button" onclick="skicka()">Skicka</button>
+        </form>
+        <!--resultatet, det som du har skickat allså så att medelande går nånstans-->
+        <p id="resultat"></p>
+        <!--javascripten som det ta medelandet till och gör det till ett text och tar bort kod möjligheten från den-->
+        <script src="../Css och JavaScript/SkickaMeddelande.js"></script>
+      </div>
     </div>
-
-    <!--JavaScripten som finnns i en annnan fil och den körs här-->
-
-    <script src="../Css och JavaScript/JavaScript.js"></script>
-
     <footer>Skapad av Riad</footer>
   </body>
 </html>
